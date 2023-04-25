@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<title>flowers_music</title>
+<head>
+    <link rel="stylesheet" href="flowers.css">
+</head>
+
+<body>
+  <center>
+    <h1>(: Flower Garden :)</h1>
+    
+    <p> Please press 'a' and then try hovering over the flowers!</p>
+    
+    <div class="flower"> </div>
+    <div class="flower2"> </div>
+    <div class="flower3"> </div>
+    <div class="flower4"> </div>
+    <div class="flower5"> </div>
+    <div class="flower6"> </div>
+    <div class="flower7"> </div>
+    <div class="flower8"> </div>
+    <div class="flower9"> </div>
+    <div class="flower10"> </div>
+    <div class="flower11"> </div>
+  </center>
+</body>
+
+
+<script>
+
+  // import * as Tone from 'tone'
+
+  //make a keypress happen before starting?
+  
+  const ctx = new window.AudioContext()
+
+  function touchStarted(e) {
+    if (e.key === 'a') {
+      ctx.resume();
+    }
+  }
+  window.addEventListener('keypress', touchStarted)
+  
+
+  function gen_play(val){
+    const osc = ctx.createOscillator()
+    osc.frequency.value = val
+    osc.connect(ctx.destination)
+    osc.start(ctx.currentTime)
+    osc.stop(ctx.currentTime + 0.15)
+  }
+
+  function f1_play(){
+    gen_play(261.63)
+  }
+  function f2_play(){
+    gen_play(293.66)
+  }
+  function f3_play(){
+    gen_play(329.63)
+  }
+  function f4_play(){
+    gen_play(349.23)
+  }
+  function f5_play(){
+    gen_play(392.00)
+  }
+  function f6_play(){
+    gen_play(440.00)
+  }
+  function f7_play(){
+    gen_play(493.88)
+  }
+
+  const f1 = document.querySelector(".flower");
+  const f2 = document.querySelector(".flower2");
+  const f3 = document.querySelector(".flower3");
+  const f4 = document.querySelector(".flower4");
+  const f5 = document.querySelector(".flower5");
+  const f6 = document.querySelector(".flower6");
+  const f7 = document.querySelector(".flower7");
+  
+  f1.addEventListener("transitionstart", f1_play)
+  f2.addEventListener("transitionstart", f2_play)
+  f3.addEventListener("transitionstart", f3_play)
+  f4.addEventListener("transitionstart", f4_play)
+  f5.addEventListener("transitionstart", f5_play)
+  f6.addEventListener("transitionstart", f6_play)
+  f7.addEventListener("transitionstart", f7_play)
+  
+  
+
+
+</script>
+
+<!-- 
+  TODO:
+  - generalize the code
+  - solve for overlapping sounds
+  - add functionality for inc/dec 
+ -->

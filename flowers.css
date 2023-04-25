@@ -1,0 +1,573 @@
+body {
+  background-color: black;
+}
+
+/* h1, p{
+  color: rgb(255, 255, 255);
+  z-index: 9999;
+  position: relative;
+} */
+
+h1 { color: rgb(255, 208, 249); position: relative; }
+p { color: rgb(188, 249, 237); position: relative; }
+
+
+/* ----------------------
+          FLOWER 
+   ---------------------- */
+
+.flower{
+  width: 280px;
+  height: 100px;
+  position: absolute;
+  background-color: cadetblue;
+  border-radius: 50px;
+  left: 2%;
+  top: 60%;
+}
+    
+.flower::before{
+  content: "";
+  display: block;
+  position: absolute;
+  width: 280px;
+  height: 100px;
+  background-color: cadetblue;
+  border-radius: 50px;
+  transform: rotate(60deg);
+}
+  
+.flower::after{
+  content: "";
+  display: block;
+  position: absolute;
+  width: 280px;
+  height: 100px;
+  background-color: cadetblue;
+  border-radius: 50px;
+  transform: rotate(-60deg);
+}
+
+.flower:hover {
+  background-color: rgb(122, 18, 114);
+  transition: all 1s;
+}
+.flower:hover::before {
+  background-color: rgb(122, 18, 114);
+  transition: all 1s;
+}
+.flower:hover::after {
+  background-color: rgb(122, 18, 114);
+  transition: all 1s;
+}
+  
+
+/* ----------------------
+         FLOWER 2 
+   ---------------------- */
+    
+    
+.flower2{
+  width: 280px;
+  height: 100px;
+  left: 14.7%;
+  top: 40%;
+  position: absolute;
+  background-color: rgb(113, 231, 109);
+  border-radius: 50px;
+}
+  
+.flower2::before{
+  content: "";
+  display: block;
+  position: absolute;
+  width: 280px;
+  height: 100px;
+  background-color: rgb(113, 231, 109);
+  border-radius: 50px;
+  transform: rotate(60deg);
+}
+
+.flower2::after{
+  content: "";
+  display: block;
+  position: absolute;
+  width: 280px;
+  height: 100px;
+  background-color: rgb(113, 231, 109);
+  border-radius: 50px;
+  transform: rotate(-60deg);
+}
+  
+.flower2:hover {
+  background-color: rgb(123, 62, 194);
+  transition: all 1s;
+}
+.flower2:hover::before {
+  background-color: rgb(123, 62, 194);
+  transition: all 1s;
+}
+.flower2:hover::after {
+  background-color: rgb(123, 62, 194);
+  transition: all 1s;
+}
+
+  
+/* ----------------------
+         FLOWER 3
+   ---------------------- */ 
+    
+  
+.flower3{
+  width: 280px;
+  height: 100px;
+  left: 27.4%;
+  top: 60%;
+  position: absolute;
+  background-color: pink;
+  border-radius: 50px;
+}
+  
+.flower3::before{
+  content: "";
+  display: block;
+  position: absolute;
+  width: 280px;
+  height: 100px;
+  background-color: pink;
+  border-radius: 50px;
+  transform: rotate(60deg);
+}
+
+.flower3::after{
+  content: "";
+  display: block;
+  position: absolute;
+  width: 280px;
+  height: 100px;
+  background-color: pink;
+  border-radius: 50px;
+  transform: rotate(-60deg);
+}
+  
+.flower3:hover {
+  background-color: rgb(45, 160, 212);
+  transition: all 1s;
+}
+.flower3:hover::before {
+  background-color: rgb(45, 160, 212);
+  transition: all 1s;
+}
+.flower3:hover::after {
+  background-color: rgb(45, 160, 212);
+  transition: all 1s;
+}
+  
+
+/* ----------------------
+         FLOWER 4
+   ---------------------- */
+
+
+.flower4{
+  width: 280px;
+  height: 100px;
+  left: 40.1%;
+  top: 40%;
+  position: absolute;
+  background-color: orange;
+  border-radius: 50px;
+}
+  
+.flower4::before{
+  content: "";
+  display: block;
+  position: absolute;
+  width: 280px;
+  height: 100px;
+  background-color: orange;
+  border-radius: 50px;
+  transform: rotate(60deg);
+}
+
+.flower4::after{
+  content: "";
+  display: block;
+  position: absolute;
+  width: 280px;
+  height: 100px;
+  background-color: orange;
+  border-radius: 50px;
+  transform: rotate(-60deg);
+}
+  
+.flower4:hover {
+  background-color: rgb(155, 218, 40);
+  transition: all 1s; 
+}
+.flower4:hover::before {
+  background-color: rgb(155, 218, 40);
+  transition: all 1s;
+}
+.flower4:hover::after {
+  background-color: rgb(155, 218, 40);
+  transition: all 1s;
+}
+
+
+/* ----------------------
+         FLOWER 5
+   ---------------------- */
+
+
+.flower5{
+  width: 280px;
+  height: 100px;
+  position: absolute;
+  background-color: hotpink;
+  border-radius: 50px;
+  left: 52.8%;
+  top: 60%;
+}
+  
+.flower5::before{
+  content: "";
+  display: block;
+  position: absolute;
+  width: 280px;
+  height: 100px;
+  background-color: hotpink;
+  border-radius: 50px;
+  transform: rotate(60deg);
+}
+
+.flower5::after{
+  content: "";
+  display: block;
+  position: absolute;
+  width: 280px;
+  height: 100px;
+  background-color: hotpink;
+  border-radius: 50px;
+  transform: rotate(-60deg);
+}
+
+.flower5:hover {
+  background-color: rgb(54, 2, 75);
+  transition: all 1s;
+}
+.flower5:hover::before {
+  background-color: rgb(54, 2, 75);
+  transition: all 1s;
+}
+.flower5:hover::after {
+  background-color: rgb(54, 2, 75);
+  transition: all 1s;
+}
+
+
+/* ----------------------
+         FLOWER 6
+   ---------------------- */
+
+
+.flower6{
+  width: 280px;
+  height: 100px;
+  position: absolute;
+  background-color: rgb(97, 112, 241);
+  border-radius: 50px;
+  left: 65.5%;
+  top: 40%;
+}
+  
+.flower6::before{
+  content: "";
+  display: block;
+  position: absolute;
+  width: 280px;
+  height: 100px;
+  background-color: rgb(97, 112, 241);
+  border-radius: 50px;
+  transform: rotate(60deg);
+}
+
+.flower6::after{
+  content: "";
+  display: block;
+  position: absolute;
+  width: 280px;
+  height: 100px;
+  background-color: rgb(97, 112, 241);
+  border-radius: 50px;
+  transform: rotate(-60deg);
+}
+
+.flower6:hover {
+  background-color: rgb(177, 235, 19);
+  transition: all 1s;
+}
+.flower6:hover::before {
+  background-color: rgb(177, 235, 19);
+  transition: all 1s;
+}
+.flower6:hover::after {
+  background-color: rgb(177, 235, 19);
+  transition: all 1s;
+}
+
+
+/* ----------------------
+         FLOWER 7
+   ---------------------- */
+
+
+.flower7{
+  width: 280px;
+  height: 100px;
+  position: absolute;
+  background-color: rgb(142, 118, 143);
+  border-radius: 50px;
+  /* right: 2%; */
+  left: 78.4%;
+  top: 60%;
+}
+  
+.flower7::before{
+  content: "";
+  display: block;
+  position: absolute;
+  width: 280px;
+  height: 100px;
+  background-color: rgb(142, 118, 143);
+  border-radius: 50px;
+  transform: rotate(60deg);
+}
+
+.flower7::after{
+  content: "";
+  display: block;
+  position: absolute;
+  width: 280px;
+  height: 100px;
+  background-color: rgb(142, 118, 143);
+  border-radius: 50px;
+  transform: rotate(-60deg);
+}
+
+.flower7:hover {
+  background-color: rgb(252, 63, 63);
+  transition: all 1s;
+}
+.flower7:hover::before {
+  background-color: rgb(252, 63, 63);
+  transition: all 1s;
+}
+.flower7:hover::after {
+  background-color: rgb(252, 63, 63);
+  transition: all 1s;
+}
+
+
+/* ----------------------
+         FLOWER 8
+   ---------------------- */
+
+
+/* .flower8{
+  width: 280px;
+  height: 100px;
+  position: absolute;
+  background-color: rgb(241, 243, 113);
+  border-radius: 50px;
+  left: 41%;
+  top: 49%;
+}
+  
+.flower8::before{
+  content: "";
+  display: block;
+  position: absolute;
+  width: 280px;
+  height: 100px;
+  background-color: rgb(241, 243, 113);
+  border-radius: 50px;
+  transform: rotate(60deg);
+}
+
+.flower8::after{
+  content: "";
+  display: block;
+  position: absolute;
+  width: 280px;
+  height: 100px;
+  background-color: rgb(241, 243, 113);
+  border-radius: 50px;
+  transform: rotate(-60deg);
+}
+
+.flower8:hover {
+  background-color: rgb(7, 148, 167);
+  transition: all 1s;
+}
+.flower8:hover::before {
+  background-color: rgb(7, 148, 167);
+  transition: all 1s;
+}
+.flower8:hover::after {
+  background-color: rgb(7, 148, 167);
+  transition: all 1s;
+} */
+
+
+/* ----------------------
+         FLOWER 9
+   ---------------------- */
+
+
+/* .flower9{
+  width: 280px;
+  height: 100px;
+  position: absolute;
+  background-color: rgb(35, 209, 166);
+  border-radius: 50px;
+  left: 76%;
+  top: 19%;
+}
+  
+.flower9::before{
+  content: "";
+  display: block;
+  position: absolute;
+  width: 280px;
+  height: 100px;
+  background-color: rgb(35, 209, 166);
+  border-radius: 50px;
+  transform: rotate(60deg);
+}
+
+.flower9::after{
+  content: "";
+  display: block;
+  position: absolute;
+  width: 280px;
+  height: 100px;
+  background-color: rgb(35, 209, 166);
+  border-radius: 50px;
+  transform: rotate(-60deg);
+}
+
+.flower9:hover {
+  background-color: rgb(214, 55, 90);
+  transition: all 1s;
+}
+.flower9:hover::before {
+  background-color: rgb(214, 55, 90);
+  transition: all 1s;
+}
+.flower9:hover::after {
+  background-color: rgb(214, 55, 90);
+  transition: all 1s;
+} */
+
+
+/* ----------------------
+         FLOWER 10
+   ---------------------- */
+
+
+/* .flower10{
+  width: 280px;
+  height: 100px;
+  position: absolute;
+  background-color: rgb(202, 8, 112);
+  border-radius: 50px;
+  left: 8%;
+  top: 80%;
+}
+  
+.flower10::before{
+  content: "";
+  display: block;
+  position: absolute;
+  width: 280px;
+  height: 100px;
+  background-color: rgb(202, 8, 112);
+  border-radius: 50px;
+  transform: rotate(60deg);
+}
+
+.flower10::after{
+  content: "";
+  display: block;
+  position: absolute;
+  width: 280px;
+  height: 100px;
+  background-color: rgb(202, 8, 112);
+  border-radius: 50px;
+  transform: rotate(-60deg);
+}
+
+.flower10:hover {
+  background-color: rgb(55, 92, 97);
+  transition: all 1s;
+}
+.flower10:hover::before {
+  background-color: rgb(55, 92, 97);
+  transition: all 1s;
+}
+.flower10:hover::after {
+  background-color: rgb(55, 92, 97);
+  transition: all 1s;
+} */
+
+
+/* ----------------------
+         FLOWER 11
+   ---------------------- */
+
+
+/* .flower11{
+  width: 280px;
+  height: 100px;
+  position: absolute;
+  background-color: rgb(14, 147, 255);
+  border-radius: 50px;
+  left: 60%;
+  top: 79%;
+}
+  
+.flower11::before{
+  content: "";
+  display: block;
+  position: absolute;
+  width: 280px;
+  height: 100px;
+  background-color: rgb(14, 147, 255);
+  border-radius: 50px;
+  transform: rotate(60deg);
+}
+
+.flower11::after{
+  content: "";
+  display: block;
+  position: absolute;
+  width: 280px;
+  height: 100px;
+  background-color: rgb(14, 147, 255);
+  border-radius: 50px;
+  transform: rotate(-60deg);
+}
+
+.flower11:hover {
+  background-color: rgb(32, 197, 17);
+  transition: all 1s;
+}
+.flower11:hover::before {
+  background-color: rgb(32, 197, 17);
+  transition: all 1s;
+}
+.flower11:hover::after {
+  background-color: rgb(32, 197, 17);
+  transition: all 1s;
+} */

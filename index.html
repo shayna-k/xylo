@@ -2,109 +2,33 @@
 
 <title> xylophone </title>
 
-<head> <link rel="stylesheet" href="xylo.css"> </head>
+<style>
+  h1, h2, a {
+    text-align: center;
+    background-color: white;
+    /* text-color: white; */
+    font-family: Arial, sans-serif;
+    }
+  body {
+    background-color: black;
+  }
+</style>
 
-<body>
-  <center>
-    <h1> XYLO </h1>
-    <p> Please press 'a' and then try hovering over the stuff!</p>
+<h1>(: Welcome to XYLO :)</h1>
 
-    <div class="rect1"> </div>
-    <div class="rect2"> </div>
-    <div class="rect3"> </div>
-    <div class="rect4"> </div>
-    <div class="rect5"> </div>
-    <div class="rect6"> </div>
-    <div class="rect7"> </div>
-    <div class="rect8"> </div>
+<h2>Please select your instrument preference below and enjoy!</h2>
 
-  </center>
-</body>
+<br><br>
 
-<script>
-    
-    const ctx = new window.AudioContext()
-    const flag = 0
+<div style="text-align:center;">
+  <a href="xylo.html">
+    <button><b>Traditional Xylophone</b></button>
+  </a>
 
-    function touchStarted(e) {
-      if (e.key === 'a') {
-        ctx.resume();
-      }
-      else if (e.key === 's') {
-        // ctx.resume();
-        flag = 1
-      }
-    }
-    window.addEventListener('keypress', touchStarted)
-    
+  <br><br><br>
 
-    function calcNote (rootFreq, num) {
-        // const majorScale = [2, 2, 1, 2, 2, 2, 1]
-        const majorScale = [0, 2, 4, 5, 7, 9, 11, 12]
-        const tr2 = Math.pow(2, 1/12) // the twelth root of 2
-        const n = majorScale[num]
-        const freq = rootFreq * Math.pow(tr2, n)
-        return freq
-    }
+  <a href="flowers.html">
+    <button><b>Flower Xylophone</b></button>
+  </a>
+</div>
 
-    function gen_play(val){
-      const osc = ctx.createOscillator()
-      osc.frequency.value = val
-      osc.connect(ctx.destination)
-      osc.start(ctx.currentTime)
-      osc.stop(ctx.currentTime + 0.15)
-    }
-  
-    function f1_play(flag){
-      gen_play(261.63)
-        // let val = 261.63
-        // fr = calcNote(val, flag)
-        // if (flag === 0) {
-            
-        //     // gen_play(261.63)
-        // }
-        // else if (flag === 1){
-
-        // }
-    }
-    function f2_play(flag){
-      gen_play(293.66)
-    }
-    function f3_play(flag){
-      gen_play(329.63)
-    }
-    function f4_play(flag){
-      gen_play(349.23)
-    }
-    function f5_play(flag){
-      gen_play(392.00)
-    }
-    function f6_play(flag){
-      gen_play(440.00)
-    }
-    function f7_play(flag){
-      gen_play(493.88)
-    }
-    function f8_play(flag){
-      gen_play(520.88)
-    }
-  
-    const f1 = document.querySelector(".rect1");
-    const f2 = document.querySelector(".rect2");
-    const f3 = document.querySelector(".rect3");
-    const f4 = document.querySelector(".rect4");
-    const f5 = document.querySelector(".rect5");
-    const f6 = document.querySelector(".rect6");
-    const f7 = document.querySelector(".rect7");
-    const f8 = document.querySelector(".rect8");
-    
-    f1.addEventListener("transitionstart", f1_play)
-    f2.addEventListener("transitionstart", f2_play)
-    f3.addEventListener("transitionstart", f3_play)
-    f4.addEventListener("transitionstart", f4_play)
-    f5.addEventListener("transitionstart", f5_play)
-    f6.addEventListener("transitionstart", f6_play)
-    f7.addEventListener("transitionstart", f7_play)
-    f8.addEventListener("transitionstart", f8_play)
-  
-</script>
