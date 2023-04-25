@@ -1,0 +1,197 @@
+body { background-color: rgb(18, 18, 18); }
+h1 { color: rgb(255, 208, 249); position: relative; }
+p { color: rgb(188, 249, 237); position: relative; }
+
+
+.rect1{
+    height: 400px;
+    width: 100px;
+    position: absolute;
+    background-color: rgb(255, 0, 0);
+    left: 10%;
+    top: 25%;
+}
+
+.rect1:hover {
+    background-color: rgb(143, 1, 1);
+    transition: all 1s;
+}
+
+
+
+.rect2{
+    height: 380px;
+    width: 100px;
+    position: absolute;
+    background-color: rgb(255, 123, 0);
+    left: 20%;
+    top: 26.5%;
+}
+
+.rect2:hover {
+    background-color: rgb(189, 91, 0);
+    transition: all 1s;
+}
+
+
+
+.rect3{
+    height: 360px;
+    width: 100px;
+    position: absolute;
+    background-color: rgb(255, 247, 0);
+    left: 30%;
+    top: 28%;
+}
+
+.rect3:hover {
+    background-color: rgb(199, 160, 0);
+    transition: all 1s;
+}
+
+
+
+.rect4{
+    height: 340px;
+    width: 100px;
+    position: absolute;
+    background-color: rgb(0, 209, 24);
+    left: 40%;
+    top: 29.5%;
+}
+
+.rect4:hover {
+    background-color: rgb(7, 133, 0);
+    transition: all 1s;
+}
+
+
+
+.rect5{
+    height: 320px;
+    width: 100px;
+    position: absolute;
+    background-color: rgb(0, 211, 214);
+    left: 50%;
+    top: 31%;
+}
+
+.rect5:hover {
+    background-color: rgb(0, 162, 176);
+    transition: all 1s;
+}
+
+
+
+.rect6{
+    height: 300px;
+    width: 100px;
+    position: absolute;
+    background-color: rgb(0, 74, 202);
+    left: 60%;
+    top: 32.5%;
+}
+
+.rect6:hover {
+    background-color: rgb(3, 0, 157);
+    transition: all 1s;
+}
+
+
+
+.rect7{
+    height: 280px;
+    width: 100px;
+    position: absolute;
+    background-color: rgb(99, 0, 228);
+    left: 70%;
+    top: 34%;
+}
+
+.rect7:hover {
+    background-color: rgb(75, 0, 136);
+    transition: all 1s;
+}
+
+
+
+.rect8{
+    height: 260px;
+    width: 100px;
+    position: absolute;
+    background-color: rgb(255, 71, 243);
+    left: 80%;
+    top: 35.5%;
+}
+
+.rect8:hover {
+    background-color: rgb(154, 0, 141);
+    transition: all 1s;
+}
+
+
+
+
+/* ----------------- */
+
+/* .rect9{
+    height: 350px;
+    width: 50px;
+    position: absolute;
+    background-color: rgb(42, 235, 242);
+    left: 45%;
+    top: 30%;
+}
+
+.rect9:hover {
+    background-color: rgb(122, 18, 114);
+    transition: all 1s;
+}
+
+
+
+.rect10{
+    height: 350px;
+    width: 50px;
+    position: absolute;
+    background-color: rgb(42, 235, 242);
+    left: 50%;
+    top: 30%;
+}
+
+.rect10:hover {
+    background-color: rgb(122, 18, 114);
+    transition: all 1s;
+}
+
+
+
+.rect11{
+    height: 350px;
+    width: 50px;
+    position: absolute;
+    background-color: rgb(42, 235, 242);
+    left: 55%;
+    top: 30%;
+}
+
+.rect11:hover {
+    background-color: rgb(122, 18, 114);
+    transition: all 1s;
+}
+
+
+
+.rect12{
+    height: 350px;
+    width: 50px;
+    position: absolute;
+    background-color: rgb(42, 235, 242);
+    left: 60%;
+    top: 30%;
+}
+
+.rect12:hover {
+    background-color: rgb(122, 18, 114);
+    transition: all 1s;
+} */
