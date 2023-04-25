@@ -6,9 +6,12 @@
 
 <body>
   <center>
-    <h1>(: Flower Garden :)</h1>
-    
+    <h1>Flower XYLO</h1>
     <p> Please press 'a' and then try hovering over the flowers!</p>
+
+    <a href="index.html">
+      <button><b>Back</b></button>
+    </a>
     
     <div class="flower"> </div>
     <div class="flower2"> </div>
@@ -24,12 +27,7 @@
   </center>
 </body>
 
-
 <script>
-
-  // import * as Tone from 'tone'
-
-  //make a keypress happen before starting?
   
   const ctx = new window.AudioContext()
 
@@ -87,14 +85,4 @@
   f6.addEventListener("transitionstart", f6_play)
   f7.addEventListener("transitionstart", f7_play)
   
-  
-
-
 </script>
-
-<!-- 
-  TODO:
-  - generalize the code
-  - solve for overlapping sounds
-  - add functionality for inc/dec 
- -->

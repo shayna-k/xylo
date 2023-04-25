@@ -9,6 +9,10 @@
     <h1> Traditional XYLO </h1>
     <p> Please press 'a' and then try hovering over the instrument!</p>
 
+    <a href="index.html">
+      <button><b>Back</b></button>
+    </a>
+
     <div class="rect1"> </div>
     <div class="rect2"> </div>
     <div class="rect3"> </div>
@@ -17,12 +21,11 @@
     <div class="rect6"> </div>
     <div class="rect7"> </div>
     <div class="rect8"> </div>
-
   </center>
 </body>
 
 <script>
-    
+
     const ctx = new window.AudioContext()
     const flag = 0
 
@@ -31,7 +34,6 @@
         ctx.resume();
       }
       else if (e.key === 's') {
-        // ctx.resume();
         flag = 1
       }
     }
@@ -39,7 +41,6 @@
     
 
     function calcNote (rootFreq, num) {
-        // const majorScale = [2, 2, 1, 2, 2, 2, 1]
         const majorScale = [0, 2, 4, 5, 7, 9, 11, 12]
         const tr2 = Math.pow(2, 1/12) // the twelth root of 2
         const n = majorScale[num]
@@ -57,15 +58,6 @@
   
     function f1_play(flag){
       gen_play(261.63)
-        // let val = 261.63
-        // fr = calcNote(val, flag)
-        // if (flag === 0) {
-            
-        //     // gen_play(261.63)
-        // }
-        // else if (flag === 1){
-
-        // }
     }
     function f2_play(flag){
       gen_play(293.66)
@@ -106,5 +98,5 @@
     f6.addEventListener("transitionstart", f6_play)
     f7.addEventListener("transitionstart", f7_play)
     f8.addEventListener("transitionstart", f8_play)
-  
+
 </script>
